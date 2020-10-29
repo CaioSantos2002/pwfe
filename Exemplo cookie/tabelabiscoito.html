@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="itable.png">
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <title>Idades</title>
+</head>
+
+<body onload="carregaTabelaCookie()">
+    <div class="form1">
+        <form>
+            <input type="text" placeholder="Nome completo" id="nome" />
+            <input type="number" placeholder="Idade" id="idade" />
+            <input type="text" placeholder="Classificação" id="classificado" disabled="" />
+            <input type="button" value="Adicionar" id="botao" />
+        </form>
+    </div>
+    <div class="tableResult">
+        <table>
+            <thead>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Classificação</th>
+                <th>Ações</th>
+            </thead>
+            <tbody id="corpoTabela">
+            </tbody>
+        </table>
+    </div>
+    <div class="form1">
+        <form>
+            <input type="button" value="Salvar como Cookie" onclick="salvaTabelaCookie()" />
+        </form>
+    </div>
+    <script src="scriptcookie.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Compromissos</title>
+</head>
+
+<body onload="carregaTabelaCookie()">
+    <div class="form1">
+        <form>
+            <input type="date" placeholder="Insira a data" id="data" />
+            <input type="text" placeholder="Descrição" id="descricao" />
+            <input type="button" value="Adicionar" id="botao" />
+        </form>
+    </div>
+    <div class="tableResult">
+        <table>
+            <thead>
+                <th>Data</th>
+                <th>Compromisso</th>
+                <th>Ações</th>
+            </thead>
+            <tbody id="corpoTabela">
+            </tbody>
+        </table>
+    </div>
+    <div class="form1">
+        <form>
+            <input type="button" value="Salvar em Cookie" onclick="salvaTabelaCookie()" />
+        </form>
+        <div class="leArquivo">
+            <input type="file" id="abrir" accept=".txt,.csv" />
+            <input type="button" id="salvar" value="Baixar arquivo" onclick="salvarArquivo()" />
+        </div>
+    </div>
+    <script src="cookie.js"></script>
+
+</body>
+
+</html>

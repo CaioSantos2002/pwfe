@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<script src="script.js"></script>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Cadastro</legend>
+            <label>Nome:</label>
+            <input type="text" name="nome" id="name" required />
+            <label>Idade:</label>
+            <input type="number" name="idade" id="age" />
+            <label>Sexo:</label>
+            <select name="sexo" id="gender">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Trans">Trans</option>
+            </select>
+        </fieldset>
+        <input type="button" id="btEnviar" value="Enviar" onclick="processaForm()" />
+        <input type="reset" id="btLimpar" value="Limpar" />
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+.tableForm{
+    justify-content: center;
+    display: flex;
+}
+.tableForm label{
+    padding:10px 10px 0px 10px;
+    margin: 10px 10px 0px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.tableForm input{
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.tableResult{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.tableResult td{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding:10px;
+    margin: 10px;
+    width: 160px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: right;
+}
+.tableResult button{
+    padding:5px;
+    width:80px;
+}
+
+.leArquivo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.leArquivo label{
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.leArquivo input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin:5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.arquivo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.arquivo div{
+    width:600px;
+    max-width:600px;
+    min-height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.sideBySide{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.sideBySide p{
+    border: 1px solid #ccc;
+    border-radius: 5px;    
+    width:200px;
+    text-align: center;
+    padding: 40px;
+}
+.sideBySide img{
+    border: 1px solid #ccc;
+    border-radius: 5px;    
+}
+
+@media only screen and (max-width: 600px) {
+    .tableForm{
+        justify-content: center;
+        display: flex;
+        flex-direction:column;
+    }
+    .tableForm label{
+        visibility: hidden;
+    }
+    .tableForm td{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .tableResult{
+        justify-content: left;
+        align-items: center;
+        display: flex;
+    }
+    .tableResult td{
+        min-width: 100px;
+    }
+
+    .leArquivo {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction:column;
+    }
+}

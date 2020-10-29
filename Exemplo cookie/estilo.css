@@ -1,0 +1,61 @@
+.form1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.form1 form{
+    margin:10px;
+}
+
+.form1 form input{
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.form1 form input[type=button]{
+    width: 200px;
+}
+
+.form1 form input[type=text]{
+    width: 280px;
+}
+
+.form1 form input[type=number]{
+    width: 50px;
+}
+
+.tableResult{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.tableResult th{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding:10px;
+    margin: 10px;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.tableResult td{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding:10px;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: right;
+}
+
+.tableResult td input{
+    padding:5px;
+    width: 50%;
+    border-radius: 5px;
+}
